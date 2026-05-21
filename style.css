@@ -223,3 +223,53 @@ section {
     padding: 30px;
     font-size: 14px;
 }
+/* СПЕЦИАЛЬНЫЕ НАСТРОЙКИ ДЛЯ МОБИЛЬНЫХ ТЕЛЕФОНОВ */
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .logo-area {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .logo-img {
+        height: 50px; /* Уменьшаем логотип на телефоне, чтобы не жал */
+        margin-bottom: 5px;
+    }
+
+    .site-title {
+        font-size: 1.2rem;
+        line-height: 1.3;
+    }
+
+    .main-nav {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-nav a {
+        font-size: 0.9rem;
+    }
+
+    .btn-book {
+        padding: 6px 12px;
+    }
+
+    .hero-section {
+        padding: 120px 20px 60px 20px; /* Корректируем отступ сверху, чтобы шапка не перекрывала текст */
+    }
+
+    .hero-content h1 {
+        font-size: 1.8rem; /* Уменьшаем главный заголовок, чтобы он не налезал на фотку */
+        line-height: 1.3;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
