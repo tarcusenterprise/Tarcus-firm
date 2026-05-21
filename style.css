@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    scroll-behavior: smooth; /* Это сделает плавную прокрутку при нажатии на меню! */
+}
+
+body {
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+}
+
+/* Шапка */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+.site-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #111111;
+    letter-spacing: -0.5px;
+}
+
+/* Навигация */
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #515154;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.2s;
+}
+
+.main-nav a:hover {
+    color: #000000;
+}
+
+.btn-book {
+    background: #000000;
+    color: #ffffff !important;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600 !important;
+}
+
+/* Главный баннер */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1600') no-repeat center center/cover;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 44px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    max-width: 800px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.btn-cta {
+    display: inline-block;
+    background: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 16px;
+    transition: transform 0.2s;
+}
+
+.btn-cta:hover {
+    transform: scale(1.03);
+}
+
+/* Секции общие */
+section {
+    padding: 80px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+/* Услуги */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.service-card p {
+    color: #515154;
+    line-height: 1.6;
+}
+
+/* О нас */
+.about-section {
+    background: #ffffff;
+    max-width: 100%;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    color: #515154;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+/* Контакты и Форма */
+.contact-section {
+    text-align: center;
+}
+
+.contact-info {
+    margin: 20px 0 40px 0;
+    font-size: 16px;
+    color: #515154;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.btn-submit {
+    background: #000000;
+    color: #ffffff;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-submit:hover {
+    background: #333333;
+}
+
+/* Подвал */
+.site-footer {
+    background: #111111;
+    color: #86868b;
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+}
