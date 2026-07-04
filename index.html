@@ -61,7 +61,13 @@
             <p><strong>Location:</strong> Huntington Beach, CA</p>
             <p><strong>Business Hours:</strong> Mon - Sat: 9:00 AM - 5:00 PM</p>
         </div>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSctzxAsIQUP4lRAI9bDo_yoWr32yNhGxRkHX7GbDRXp6qQB4w/viewform?embedded=true" width="640" height="856" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <form action="https://formspree.io/f/YOUR_ID_HERE" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Your Phone Number">
+            <textarea name="message" placeholder="Describe your project..." rows="5" required></textarea>
+            <button type="submit" class="btn-submit">Send Message</button>
+        </form>
     </section>
 
     <footer class="site-footer">
